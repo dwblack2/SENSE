@@ -25,9 +25,6 @@ import math
 import itertools
 import os
 
-os.chdir('/Users/delaneyblack/Downloads/Practicum/Streamlit')
-
-
 ###############################
 # Page Setup                  #
 ###############################

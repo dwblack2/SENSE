@@ -26,8 +26,6 @@ import plotly.express as px
 import math
 import os
 
-os.chdir('/Users/delaneyblack/Downloads/Practicum/Streamlit')
-
 ###############################
 # Page Setup                  #
 ###############################
