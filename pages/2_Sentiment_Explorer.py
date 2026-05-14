@@ -152,7 +152,7 @@ st.sidebar.download_button(
 
 st.subheader(
     "Emotion Distribution by Substance",
-    help="The distribution in emotions expressed across 26 unique emotions for each substance. Darker blue indicates a higher proportion of posts expressing that emotion."
+    help="The distribution in emotions expressed across 26 unique emotions for each substance. Darker blue indicates a higher proportion of comments expressing that emotion."
 )
 
 fig = px.imshow(
