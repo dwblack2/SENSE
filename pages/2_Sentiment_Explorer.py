@@ -190,7 +190,7 @@ chart_placeholder.plotly_chart(fig, use_container_width=True)
 
 st.subheader(
     "Emotion Distribution by Substance",
-    help=" < help text here >"
+    help="The distribution in emotions expressed across 26 unique emotions for each substance. Darker blue indicates a higher proportion of posts expressing that emotion."
 )
 
 fig = px.imshow(
