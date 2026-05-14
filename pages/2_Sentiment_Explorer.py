@@ -1,19 +1,5 @@
 ############################################################################## 
-#                        Longitudinal Sentiment Analysis                     #
-#   Last modified 3/19/2026                                                  #
-#                                                                            #  
-#   Notes:                                                                   #
-#       This is currently displaying REAL data to act as a placeholder       #
-#       The code requires 2 parquets                                         #
-#       Parquet 1 (valence score)                                            #
-#           "Substance"                                                      #
-#           "Month"                                                          #
-#           "Sentiment Score" (average valence)                              #
-#       Parquet 2 (go emotion)                                               #
-#           "Substance"                                                      #
-#           "Emotion" (1 observation for each of the time 5 emotions)        #
-#           "Percent" (percents of top 5 sum to 1)                           #
-#                                                                            #     
+#                        Longitudinal Sentiment Analysis                     #   
 ##############################################################################
 
 import streamlit as st

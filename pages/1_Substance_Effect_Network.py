@@ -1,17 +1,5 @@
 ############################################################################## 
-#                         Substance Effect Network                           #
-#   Last modified 11/25/2025                                                 #
-#                                                                            #
-#   To do:                                                                   #
-#       make minimum edge count 5 or 10                                      #
-#   Notes: This is currently displaying REAL data!!!!                        #
-#   The code requires a parquet with the following variables:                #
-#         substance                                                          #
-#         effect                                                             #
-#         count_sentences (# of co-occurrences)                              #
-#         substance_count (# of total sentences with that substance)         #
-#       #
-#                                                                            #    
+#                         Substance Effect Network                           # 
 ##############################################################################
 
 import streamlit as st
