@@ -35,7 +35,7 @@ st.markdown(
 
     <h6> Select a dashboard on the left to begin! </h6>
 
-    < include a link to the github page where data and code are stored > 
+   The code for this project is available at https://github.com/dwblack2
 
     <sup>1</sup> r/Ayahuasca, r/DMT, r/DXM, r/Ketamine, r/LSD, r/LSDTripLifeHacks, r/MDMA, r/Microdosing, r/Opiates, r/Psilocybin, 
     r/Psychedelics, r/Psychonaut, r/Salvia, r/Shrooms, r/TherapeuticKetamine, and r/Weed.
