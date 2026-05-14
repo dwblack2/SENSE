@@ -145,44 +145,6 @@ st.sidebar.download_button(
     mime="text/csv"
 )
 
-###############################
-# Valence Plotly Graph        #
-###############################
-
-st.subheader(
-    "Change Over Tenure in Emotional Valence",
-    help="Average change in user sentiment over their tenure commenting by substance."
-)
-
-# Placeholder for the empty chart
-chart_placeholder = st.empty()
-
-# Show chart if there is datas
-fig = px.line(
-    filtered_df,
-    x="Month",
-    y="Sentiment Score",
-    color="Substance",
-    markers=True,
-    line_shape="spline"
-)
-
-fig.update_traces(line=dict(shape="spline", smoothing=1.3),
-                  customdata=filtered_df[["Comments"]],
-    hovertemplate=(
-        "Substance: %{fullData.name}<br>"
-        "Month: %{x}<br>"
-        "Sentiment: %{y:.2f}<br>"
-        "Comments: %{customdata[0]}<extra></extra>")
-)
-
-fig.update_layout(
-    yaxis=dict(range=[-1.1, 1.1]),
-    template="plotly_white",
-    legend_title="Substance"
-)
-
-chart_placeholder.plotly_chart(fig, use_container_width=True)
 
 ###############################
 #  Emotion Heat Map           #
@@ -221,6 +183,45 @@ fig.update_layout(
 )
 
 st.plotly_chart(fig, use_container_width=True)
+
+###############################
+# Valence Plotly Graph        #
+###############################
+
+st.subheader(
+    "Change Over Tenure in Emotional Valence",
+    help="Average change in user sentiment over their tenure commenting by substance."
+)
+
+# Placeholder for the empty chart
+chart_placeholder = st.empty()
+
+# Show chart if there is datas
+fig = px.line(
+    filtered_df,
+    x="Month",
+    y="Sentiment Score",
+    color="Substance",
+    markers=True,
+    line_shape="spline"
+)
+
+fig.update_traces(line=dict(shape="spline", smoothing=1.3),
+                  customdata=filtered_df[["Comments"]],
+    hovertemplate=(
+        "Substance: %{fullData.name}<br>"
+        "Month: %{x}<br>"
+        "Sentiment: %{y:.2f}<br>"
+        "Comments: %{customdata[0]}<extra></extra>")
+)
+
+fig.update_layout(
+    yaxis=dict(range=[-1.1, 1.1]),
+    template="plotly_white",
+    legend_title="Substance"
+)
+
+chart_placeholder.plotly_chart(fig, use_container_width=True)
 
 ###############################
 # Main Page Text              #
