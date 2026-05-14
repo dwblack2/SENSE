@@ -40,9 +40,9 @@ np.random.seed(5)
 # Emotion Data                #
 ###############################
 
-heatmap_df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/heatmap_df.parquet", engine="fastparquet")
-count_df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/count_df.parquet", engine="fastparquet")
-valence_df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/valence_df.parquet", engine="fastparquet")
+heatmap_df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/heatmap_df.parquet")
+count_df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/count_df.parquet")
+valence_df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/valence_df.parquet")
 
 ###############################
 # Sidebar                     #

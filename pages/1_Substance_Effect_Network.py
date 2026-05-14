@@ -39,7 +39,7 @@ np.random.seed(5)
 # Import Data                 #
 ###############################
 
-df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/network.parquet", engine="fastparquet")
+df = pd.read_parquet("https://storage.googleapis.com/sense_app_data/network.parquet")
 
 ###############################
 # Sidebar                     #
